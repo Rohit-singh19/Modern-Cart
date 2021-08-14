@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #eab67b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.container::after{
+    position: absolute;
+    content: '';
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #217e80;
+}
+.container::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 50%;
+    background-color: #e84e4e;
+}
+
+.cart-container{
+    width: 80vw;
+    height: 80vh;
+    background-color: white;
+    z-index: 1;
+    position: relative;
+    padding: 1.5rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.cart-container::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #e84e4e;
+    z-index: -1;
+}
+
+.cart-container::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: calc(50% - 25vw);
+    height: 20%;
+    background-color: #217e80;
+    z-index: -1;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 2.5rem;
+    font-size: 4rem;
+    color: white;
+    font-weight: 800;
+}
+
+.logo span{
+    color: #e84e4e;
+}
+
+.search{
+    position: relative;
+}
+.search i{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(-50%,-50%);
+    color: #ccc;
+}
+
+.search input{
+    width: 100%;
+    background-color: #f0f0f0;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: .5rem 1rem .5rem 2.5rem;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    color: white;
+    padding: 0 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+nav ul li:hover{
+    color: #217e80;
+}
+
+.cart{
+    padding: .5rem;
+    background-color: white;
+    border-radius: 50%;
+    color: #217e80;
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+
+.vert{
+    position: absolute;
+    top: 50%;
+    left: -8%;
+    font-size: 5rem;
+    -webkit-text-stroke: 2px #ccc;
+    color: transparent;
+    transform: rotate(-90deg);
+}
+
+.flower-img{
+    position: absolute;
+    left: 50%;
+    bottom: -40%;
+    width: 30%;
+    height: 70%;
+    transform: translate(-50%,-50%);
+    background-color: transparent;
+}
+
+.flower-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 4rem auto;
+}
+
+.data-flower ul li{
+    list-style: none;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #999999;
+}
+
+.data-flower ul li:nth-child(2n){
+    color: #ccc;
+    font-weight: 400;
+    margin-bottom: .5rem;
+}
+
+.flower-detail{
+    max-width: 50%;
+    margin-right: -10%;
+}
+
+.flower-detail h2{
+    font-size: 4rem;
+    font-weight: 600;
+    color: white;
+}
+
+.detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.vect-img{
+    width: 50%;
+    height: 50%;
+}
+
+.vect-img img{
+    width: 80%;
+    height: 50%;
+}
+
+.production{
+    font-size: 2rem;
+    color: #ccc;
+}
+
+.production h3{
+    margin-top: 2rem;
+    color: white;
+}
+
+.production small{
+    color: white;
+    font-weight: 800;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number{
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: .5rem 1rem;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    transform: .5s;
+    cursor: pointer;
+}
+
+.number span{
+    font-weight: 800;
+    margin: 0 2rem;
+}
+
+.number:hover{
+    background-color: black;
+    border-color: black;
+}
+
+.atc{
+    border-radius: 30px;
+    border: 2px solid black;
+    background-color: black;
+    padding: .5rem 1rem;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.atc span{
+    margin-right: 1rem;
+}
